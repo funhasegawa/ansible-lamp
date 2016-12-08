@@ -5,8 +5,7 @@
     state=present
 
 - name: phpをインストール
-  with_items: {{ php.install.libraries }}
-  yum: name={{ item }} state=present enablerepo=remi,remi-php56
+  yum: name={{ php.install.packages }} state=present enablerepo=remi,remi-php56
 
 - name: phpのエラーレポーティングの設定を編集
   replace:

@@ -2,7 +2,7 @@
 php:
   install:
     remi_url: http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
-    libraries:
+    packages:
       - php
       - php-mbstring
       - php-mysql
@@ -21,6 +21,7 @@ php:
     mbstring:
       language: Japanese
       internal_encoding: UTF-8
+      encoding_translation: Off
       error_log_name: Off
       http_input: pass
       http_output: pass
