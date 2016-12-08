@@ -1,0 +1,29 @@
+---
+php:
+  install:
+    remi_url: http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+    libraries:
+      - php
+      - php-mbstring
+      - php-mysql
+      - php-devel
+      - php-pecl-xdebug
+      - php-opcache
+      - php-pecl-apcu
+      - php-xml
+      - php-gd
+      - php-phpunit-PHPUnit
+  ini:
+    error_reporting: E_ALL | E_STRICT
+    display_errors: On
+    log_errors: On
+    error_log_name: php_errors.log
+    mbstring:
+      language: Japanese
+      internal_encoding: UTF-8
+      error_log_name: Off
+      http_input: pass
+      http_output: pass
+      detect_order: auto
+    date:
+      timezone: Asia/Tokyo

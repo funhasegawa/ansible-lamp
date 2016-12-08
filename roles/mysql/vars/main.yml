@@ -1,0 +1,5 @@
+---
+mysql_repo: mysql57-community-release-el7-9.noarch
+mysql_repourl: http://dev.mysql.com/get/{{ mysql_repo }}.rpm
+mysql_ver: mysql57-community
+mysql_logdir: /var/log/mysql
